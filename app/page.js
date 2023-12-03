@@ -1,4 +1,4 @@
-"use client"; // This is a client component 👈🏽
+'use client'; // This is a client component 👈🏽
 
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
