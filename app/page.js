@@ -7,6 +7,9 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
+import besocial from '../public/besocial.png'
+import movievilla from '../public/movievilla.png'
+import ecomart from '../public/ecomart.png'
 import { useState } from "react";
 
 export default function Home() {
@@ -52,12 +55,12 @@ export default function Home() {
                 <AiFillInstagram/>
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 sm:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-12 md:h-96 sm:w-96">
               <Image src={avatar} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
-        <section>
+        <section className="mt-12">
         <div>
             <h3 className="text-3xl py-1 dark:text-white text-center">About Me</h3>
             <p className=" text-center text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -110,6 +113,51 @@ export default function Home() {
             </div>
             </div>
         </section>
+
+        <section className=" mt-12">
+        <div>
+            <h3 className="text-3xl py-1 dark:text-white text-center">Projects</h3>
+            <p className=" text-center text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            Over time, I've built lots of projects using <span className="text-teal-500"> MERN tech</span>. They've been like stepping stones for me, helping me <span className="text-teal-500"> grow</span> my skills bit by bit. Each project taught me something new, shaping me into a better developer. They're not just projects, <span className="text-teal-500"> they're proof of how much I've learned and how far I've come </span> in mastering MERN.
+            </p>
+            </div>
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <Image src={besocial} width={600} height={600} className="mx-auto" />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                BESOCIAL - Social Media Website
+              </h3>
+              <p className="py-2 text-teal-500">
+              I've made a social media app that does a bunch of things: lets people log in, post stuff, like or dislike things, follow or unfollow others, and even chat. And the cool part? I'm still working on making the chat feature even better. Creating a place where users can connect, share, and talk.
+              </p>
+              <a className="py-4 underline" href="https://github.com/kumarsuraj007/Besocial-social-media-application">This is just a git repo.</a>
+              
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <Image src={movievilla} width={600} height={600} className="mx-auto" />
+              <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500">
+                MOVIEVILLA - Movie Search Website
+              </h3>
+              <p className="py-2">
+                
+I made a website using vanilla JavaScript and a movie API where you can search for any movie and get its release year. It's simple but shows my skills in using APIs to create functional, user-friendly web applications.
+              </p>
+              <a className="py-4 underline text-teal-500" href="https://github.com/kumarsuraj007/Movie_App">This is just a git repo.</a>
+        
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <Image src={ecomart} width={600} height={600} className="mx-auto" />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">ECOMART - Ecommerce Website</h3>
+              <p className="py-2 text-teal-500">
+              I built an e-commerce website where users can add items to their cart, calculate prices, and sign in. Using Firebase, I ensured secure data storage and authentication. It's a project showcasing my skills in crafting user-friendly e-commerce platforms with robust security measures.
+              </p>
+
+              <a className="py-4 underline" href="https://stellar-syrniki-fe5daa.netlify.app/">This is a live website.</a>
+              
+            </div>
+            </div>
+        </section>
+        <p className="text-center py-2 dark:text-white">MADE BY SURAJ KUMAR 👻.</p>
       </main>
     </div>
   );
