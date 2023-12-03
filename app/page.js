@@ -2,7 +2,7 @@
 
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
-import deved from "../public/dev-ed-wave.png";
+import avatar from "../public/avatar.png";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -53,7 +53,7 @@ export default function Home() {
               </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 sm:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={avatar} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
